@@ -104,6 +104,7 @@ bindsym $mod+a focus parent
 for_window [class="Spotify"] move to workspace $ws10
 for_window [class="Chromium"] move to workspace $ws1
 for_window [class="Termite"] move to workspace $ws3
+for_window [class="Code"] move to workspace $ws2, focus
 for_window [class="Termite" title="vim"] move to workspace $ws2, focus
 
 # Define names for default workspaces for which we configure key bindings later on.
