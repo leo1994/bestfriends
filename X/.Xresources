@@ -1,0 +1,10 @@
+URxvt*scrollBar: false
+
+URxvt.keysym.Control-Up:     \033[1;5A
+URxvt.keysym.Control-Down:   \033[1;5B
+URxvt.keysym.Control-Left:   \033[1;5D
+URxvt.keysym.Control-Right:  \033[1;5C
+
+URxvt*internalBorder: 30
+
+URxvt*font: xft:Fira Mono for Powerline:Regular:size=10,xft:DejaVu Sans Mono for Powerline:size=10
