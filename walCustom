@@ -1,0 +1,17 @@
+#/usr/bin/env bash
+
+function _wallpapers {
+
+  if [ "${#COMP_WORDS[@]}" != "1" ]; then
+    return
+  fi
+
+  COMPREPLY=($(compgen -W "$(ls $HOME/Images/Wallpapers)" -- "${COMP_WORDS[1]}"))
+}
+
+function walCustom {
+  wal -i $HOME/Images/Wallpapers/$1 -o "$HOME/.config/dunst/launch.sh" -q && \
+  spicetify update -q && \
+  spicetify restart -q
+}
+complete -F _wallpapers walCustom
