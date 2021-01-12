@@ -13,11 +13,11 @@
 
 pidof dunst && killall dunst
 
-dunst -lf  "${color0:-#ffffff}" \
-      -lb  "${color8:-#eeeeee}" \
-      -lfr "${color0:-#dddddd}" \
+dunst -lf  "${color8:-#ffffff}" \
+      -lb  "${color0:-#eeeeee}" \
+      -lfr "${color8:-#dddddd}" \
       -nf  "${color0:-#cccccc}" \
-      -nb  "${color7:-#bbbbbb}" \
+      -nb  "${color8:-#bbbbbb}" \
       -nfr "${color0:-#aaaaaa}" \
       -cf  "${color7:-#999999}" \
       -cb  "${color0:-#888888}" \
