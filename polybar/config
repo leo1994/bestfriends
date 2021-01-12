@@ -41,6 +41,22 @@ bottom = true
 modules-right = ping filesystem cpu memory date
 modules-left = spotify
 
+; Position of the system tray window
+; If empty or undefined, tray support will be disabled
+; NOTE: A center aligned tray will cover center aligned modules
+;
+; Available positions:
+;   left
+;   center
+;   right
+;   none
+tray-position = left
+
+; If true, the bar will not shift its
+; contents when the tray changes
+tray-detached = false
+
+
 [module/ping]
 type = custom/script
 exec = ~/.config/polybar/ping.sh

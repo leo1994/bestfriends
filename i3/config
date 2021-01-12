@@ -194,3 +194,4 @@ bindsym $mod+r mode "resize"
 
 exec --no-startup-id picom
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+bindsym Print exec flameshot
